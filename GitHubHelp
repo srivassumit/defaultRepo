@@ -1,0 +1,11 @@
+How to create a new repo from an old branch in another repo:
+
+    Create the <new_repo> in github.
+    cd to your local copy of the old repo you want to extract from, which is set up to track the <old_branch> that will become the <new_repo>'s master.
+    $ git push git@github.com:<accountname>/<new_repo> +<old_branch>:master
+
+The new Github repo is finished. The result is;
+
+    a new Github repository named <new_repo>,
+    whose master corresponds to <old_branch>, with
+    all history preserved.
